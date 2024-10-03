@@ -5,7 +5,7 @@ anime({
     easing: 'linear',
     loop: true
  })
-
+ 
 let themeToggleBtn = document.getElementById('themeToggleBtn')
 let bodyElement = document.body
 

@@ -1,10 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+
 
 
 html {
     font-size: 18px;
 }
+
 
 body {
     background-color: #272727;
@@ -14,10 +16,12 @@ body {
     /* забираємо стандартні відступи в тега body */
 }
 
+
 body.light-theme {
     background-color: #e6e6e6;
     color: rgb(24, 24, 24);
 }
+
 
 header{
     background: #272727;
@@ -38,11 +42,13 @@ header{
     flex-direction: column;
 }
 
+
 main h1{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 
 .banner h1 {
     font-size: 3rem;
@@ -50,9 +56,11 @@ main h1{
     text-shadow: 1px 1px 5px black;
 }
 
+
 .banner h3{
     transform: rotate(7.09deg);
 }
+
 
 .carousel{
     width: 900px;
@@ -70,18 +78,22 @@ main h1{
     color: white;
 }
 
+
 .section-two{
     display: flex;
     justify-content: center;
+
 
 }
 .accordion{
     width: 900px;
 }
 
+
 .h1-in-accordion{
     background-color: #6e6e6e;
 }
+
 
 footer {
     margin-top: 50px;
@@ -89,6 +101,8 @@ footer {
     padding: 50px 100px;
     color: #c8c8c8;
 }
+
+
 
 
 #themeToggle {
@@ -102,17 +116,21 @@ footer {
     border-color: transparent;
 }
 
+
 #themeToggle:hover {
     transform: scale(1.1);
     transition: 0.4s transform linear;
 }
+
 
 #themeToggle:active {
     transform: scale(0.9);
     transition-duration: .2s;
 }
 
+
 /* Проста анімація появи тексту */
+
 
 header.fixed {
     position: fixed;
@@ -127,5 +145,40 @@ header.fixed {
 }
 
 
+.accordion-own-class{
+    display: flex;
+    justify-content: center;
+}
 
 
+  
+  /* Начальный стиль кнопки (темная тема) */
+  #themeToggleBtn {
+    padding: 10px 20px;
+    margin: 20px;
+    background-image: url('img/темная\ тема.jpg'); /* Начальное фоновое изображение кнопки */
+    background-size: cover; /* Чтобы кнопка полностью покрывалась изображением */
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Светлая тема для body */
+  body.light-theme {
+    background-color: #f0f0f0; /* Светлый фон */
+    color: black;
+  }
+  
+  /* Изменение стиля кнопки при светлой теме */
+  body.light-theme #themeToggleBtn {
+    background-image: url('img/яркая\ тема.jpg'); /* Светлое изображение для кнопки */
+    color: black;
+  }
+  
+
+#themeToggle:hover {
+    transform: scale(1.1);
+    transition: 0.4s transform linear;
+}

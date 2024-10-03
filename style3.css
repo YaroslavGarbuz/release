@@ -1,10 +1,11 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
 
 
 html {
     font-size: 18px;
 }
+
 
 body {
     background-color: #272727;
@@ -14,19 +15,47 @@ body {
     /* забираємо стандартні відступи в тега body */
 }
 
+
 body.light-theme {
     background-color: #e6e6e6;
     color: rgb(24, 24, 24);
 }
 
+
 header{
     background: #272727;
 }
+.btn-search{
+    border-radius: 30px;
+}
 
-.banner {
+main h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    -webkit-text-stroke: 1px black;
+}
+
+
+.nav-link:hover{
+    color: white;
+}
+
+main{
+    margin-top: 50px;
+}
+
+footer {
+    margin-top: 50px;
+    background: rgb(73, 73, 73);
+    padding: 50px 100px;
+    color: #c8c8c8;
+}
+
+.rules {
     width: 100%;
     height: 90vh;
-    background: url('img/photo_2024-09-26_16-12-04.jpg');
+    background: url("img/правила.jpg");
     background-size: cover;
     background-position: center center;
     display: flex;
@@ -36,62 +65,31 @@ header{
     flex-direction: column;
 }
 
-main h1{
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.banner h1 {
-    font-size: 3rem;
-    text-align: center;
+ul {
+    list-style: none;
+    padding-left: 0;
     text-shadow: 1px 1px 5px black;
 }
 
-.banner h3{
-    transform: rotate(7.09deg);
+ul li {
+    position: relative;
+    padding-left: 30px; /* Отступ для изображения */
+    margin-bottom: 10px;
 }
 
-.carousel{
-    width: 900px;
-}
-.carousel-own{
-    display: flex;
-    justify-content: center;
-    text-shadow: 1px 1px 5px black;
-}
-.carousel-own img{
-    width: 900px;
-    height: 700px;
-}
-.nav-link:hover{
-    color: white;
+main li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Ширина изображения */
+    height: 20px; /* Высота изображения */
+    background: url("img/image-removebg-preview.png") no-repeat center center;
+    background-size: contain;
 }
 
-.section-two{
-    display: flex;
-    justify-content: center;
 
-}
-.accordion{
-    width: 900px;
-}
-
-.h1-in-accordion{
-    background-color: #6e6e6e;
-}
-
-footer {
-    margin-top: 50px;
-    background: rgb(73, 73, 73);
-    padding: 50px 100px;
-    color: #c8c8c8;
-}
-/* Начальный фон и стиль для body */
-body {
-    background-color: #333; /* Темный фон */
-    color: white;
-  }
   
   /* Начальный стиль кнопки (темная тема) */
   #themeToggleBtn {
@@ -124,12 +122,8 @@ body {
     transition: 0.4s transform linear;
 }
 
-#themeToggle:active {
-    transform: scale(0.9);
-    transition-duration: .2s;
-}
-
 /* Проста анімація появи тексту */
+
 
 header.fixed {
     position: fixed;
@@ -144,5 +138,7 @@ header.fixed {
 }
 
 
-
-
+.accordion-own-class{
+    display: flex;
+    justify-content: center;
+}
